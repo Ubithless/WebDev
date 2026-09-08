@@ -38,7 +38,13 @@
     font-size: 20px;
     text-decoration: none;
     color: inherit;
+    
 }
+
+.navbar .nav-buttons a:hover {
+  transform: scale(1.15);
+}
+
 
 .navbar .nav-buttons .button {
     color: white;
@@ -53,6 +59,7 @@
 .logo {
     aspect-ratio: 1/1;
     width: 30px;
-    background-color: black;
+    background-color: blue
+    ;
 }
 /* navbar */
