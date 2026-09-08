@@ -1,16 +1,154 @@
+/*element and class global styling*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1 {
+    font-size: 28px;
+    color: #0c4147;
+}
+
 body {
+    font-family: Inter;
     margin: 0;
     padding: 0;
 }
 
-
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+}
 
 p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
-.navbar {
+.button {
+    font-size: 24px;
+    background-color: #01515a;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    width: auto;
+    text-align: center;
+}
+/*element and class global styling*/
+
+
+
+/* banner and card */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 850px;
+    padding: 100px 0px 0px 0px;
+    background: linear-gradient(to bottom left, #59DBEB, #18b4c9);
+}
+
+.card {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    translate: -50% 0; /* -50% horizontally, 0 vertically */
+    width: auto;
+    padding: 20px 50px;
+    height: auto;
+    background: linear-gradient(to bottom, white, #c7f8ff);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.20);
+    border-radius: 100px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
+.card h1 {
+    margin: 0;
+}
+/* banner and card */
+
+/*more container */
+.more-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    gap: 100px;
+}
+/*more container */
+
+/* Recent works section */
+
+.recent-works {
+    width: calc(100% - 500px);
+    height: 100%;
+    padding: 200px 0 100px 0;
+    margin: 0 auto;
+}
+
+.recent-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recent-header a{
+    color: #18b4c9;
+    text-decoration: underline ;
+}
+
+.recent-cards {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 100%;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scroll-margin-top: 10px;
+}   
+
+.recent-cards .image-card {
+    width: 400px;
+    flex-shrink: 0;
+    background-color: white;
+    border: 1px solid #01515a;
+    padding: 20px;
+    border-radius: 18px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;  
+}
+
+.recent-cards .image-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.recent-cards .image-card p {
+    margin: 0;
+    padding: 0 4px 4px;
+}
+/* Recent works section */
+
+/*ratigs section*/
+.ratings {
+    height: 1000px;
+    padding: 100px 0 100px 0    ;
+}
