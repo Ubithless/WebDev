@@ -312,9 +312,11 @@ p {
 .container {
     width: calc(100% - 500px);
     height: auto;
-
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
     justify-self: center;
-    padding: 100px 0 100px 0;
+    padding: 130px 0 100px 0;
 }
 
 .container h1 {
@@ -463,4 +465,78 @@ p {
 .gallery-containers .img-container img {
     height: 300px;
     width: auto;
+}
+
+/* Services css */
+
+.services-body {
+    width: min(1100px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 140px 0 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+.services-text {
+    background: linear-gradient(to bottom, white, #c7f8ff);
+    padding: clamp(30px, 6vw, 70px);
+    border-radius: 32px;
+    box-shadow: 0 15px 35px rgba(12, 65, 71, 0.12);
+}
+
+.services-text h1 {
+    margin: 0 0 20px;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1;
+}
+
+.service-samples {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.service-heading h2 {
+    margin: 8px 0 0;
+    color: #0c4147;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.1;
+}
+
+.service-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.service-card {
+    overflow: hidden;
+    border: 1px solid rgba(12, 65, 71, 0.12);
+    border-radius: 24px;
+    background: white;
+    box-shadow: 0 10px 25px rgba(12, 65, 71, 0.1);
+}
+
+.service-card > img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+.service-card-content {
+    padding: 24px;
+}
+
+.service-card h3 {
+    margin: 0 0 10px;
+    color: #0c4147;
+    font-size: 20px;
+}
+
+.service-card p {
+    margin: 0;
+    color: #49676b;
+    font-size: 14px;
+    line-height: 1.6;
 }
