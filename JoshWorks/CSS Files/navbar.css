@@ -18,7 +18,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: calc(100% - 40px);
+    width: calc(100% - 500px);
     padding: 10px 20px;
     border: 2px solid rgb(220, 220, 220);
     border-radius: 50px;
@@ -31,11 +31,11 @@
     flex-direction: row;
     gap: 30px;
     align-items: center;
-    padding: 0px 20px;
+    padding: 0px 0px;
 }
 
 .navbar .nav-buttons a {
-    font-size: 20px;
+    font-size: 16px;
     text-decoration: none;
     color: inherit;
     
@@ -54,6 +54,7 @@
 .navbar .nav-buttons a#current {
     color: #0c4147;
     font-weight: bold;
+    font-size: 20px;
 }
 
 .logo {
