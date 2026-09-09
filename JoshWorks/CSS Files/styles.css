@@ -3,6 +3,9 @@
     box-sizing: border-box;
 }
 
+h2 {
+    margin: 0;
+}
 h1 {
     font-size: 24px;
     color: #0c4147;
@@ -162,7 +165,7 @@ p {
 .recent-cards {
     display: flex;
     flex-direction: row;
-    height: 500px;
+    height: auto;
     width: 100%;
     gap: 20px;
     overflow-x: auto;
@@ -183,6 +186,13 @@ p {
     gap: 10px;  
 }
 
+.image-card h2 {
+    padding-top: 10px;
+}
+
+.image-card p {
+    color: #007e8f;
+}
 .recent-cards .image-card img {
     display: block;
     width: 100%;
