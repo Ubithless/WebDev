@@ -413,3 +413,54 @@ p {
 .buttons input {
     cursor: pointer;
 }
+
+/*Gallery*/
+
+.gallery-header {
+    width: 100%;
+    background-color: #01515a;
+    height: auto;
+    padding: 10px 0;
+    margin: 20px 0 0 0; 
+}
+
+.gallery-header h1{
+    font-size: 40px;
+    justify-self: center;
+    color: white;
+}
+
+.gallery-body {
+    width: calc(100% - 500px);
+    height: auto;
+    justify-self: center;
+    padding: 110px 0 100px 0;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+}
+
+.gallery-containers {
+    padding: 0 0 30px 0;
+    border: #01515a solid 2px;
+    border-radius: 50px;
+}
+
+.gallery-containers h1 {
+    padding: 10px 0 10px 0;
+    justify-self: center;
+}
+
+.gallery-containers .img-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-containers .img-container img {
+    height: 300px;
+    width: auto;
+}
