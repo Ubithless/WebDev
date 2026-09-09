@@ -16,7 +16,8 @@
     <div class="navbar">
         <div class="navbar-content">
             <div class="logo" id="header">
-                <img src="" alt="hi">
+                <img src="/assets/logo1.png" alt="hi">
+                <img src="/assets/logo.png" alt="hi">
             </div>
 
             <div class="nav-buttons" >
@@ -27,18 +28,13 @@
                 <a href="ContactUs.html" class="button">Contact us</a>
             </div>
         </div>
-    </div>
+    </div> 
 
-    <nav class="sidebar" aria-label="Section navigation">
-        <a href="#section-1" class="active" aria-label="Go to home section"></a>
-        <a href="#section-2" aria-label="Go to recent works section"></a>
-        <a href="#section-3" aria-label="Go to footer section"></a>
-    </nav>
-    
-    <div class="banner scroll-target" id="section-1">
-        <div id="texts">
-            image lang nadi waits
+    <div class="banner">
+        <div class="banner-background">
+            <img src="/assets/background.png" alt="">
         </div>
+        
 
         <div id="side-bar">
 
@@ -53,7 +49,7 @@
     </div>
 
     <div class="more-container">
-        <div class="recent-works scroll-target" id="section-2">
+        <div class="recent-works">
             <div class="recent-header">
                 <h1>Recent Works</h1>
                 <a href="">See more</a>
@@ -80,7 +76,7 @@
             </div>
         </div>
 
-        <footer class="footer scroll-target" id="section-3">
+        <footer class="footer">
             <div class="footer-content">
                 <div class="footer-brand">
                     <h2>JoshWorks</h2>
@@ -101,39 +97,12 @@
                 </div>
             </div>
 
-            <div id="footer-bottom">
+            <div class="footer-bottom">
                 <p>© 2025 JoshWorks. All rights reserved.</p>
             </div>
         </footer>
     </div>
 
-    <script>
-        const sections = document.querySelectorAll('.scroll-target');
-        const sidebarLinks = document.querySelectorAll('.sidebar a');
-
-        const updateActiveLink = (id) => {
-            sidebarLinks.forEach(link => {
-                const isActive = link.getAttribute('href') === '#' + id;
-                link.classList.toggle('active', isActive);
-            });
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            const visible = entries
-                .filter(entry => entry.isIntersecting)
-                .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-            if (visible) {
-                updateActiveLink(visible.target.id);
-            }
-        }, {
-            threshold: [0.3, 0.6, 0.9],
-            rootMargin: '-10% 0px -35% 0px'
-        });
-
-        sections.forEach(section => observer.observe(section));
-    </script>
 </body>
 
 </html>
-
