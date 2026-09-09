@@ -268,3 +268,36 @@ p {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
     text-align: center;
 }
+
+/*ContactUs Section*/
+.contact-container {
+    margin: 50px auto 0;
+    width: 100%;
+    padding: 100px 0;
+    background-color: #f5f5f5;
+}
+
+.contact-form {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center; /* centers the h1 */
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* so padding doesn't push width past 500px */
+    font-family: inherit;
+}
+
+.contact-form button {
+    padding: 12px;
+    cursor: pointer;
+}
