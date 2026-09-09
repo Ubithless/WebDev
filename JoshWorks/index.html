@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HomePage</title>
-    <link rel="stylesheet" href="CSS Files/styles.css">
+    <link rel="stylesheet" href="CSS Files/home.css">
     <link rel="stylesheet" href="CSS Files/navbar.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,8 @@
     <div class="navbar">
         <div class="navbar-content">
             <div class="logo" id="header">
-                <img src="" alt="hi">
+                <img src="../assets/logo1.png" alt="hi">
+                <img src="../assets/logo.png" alt="hi">
             </div>
 
             <div class="nav-buttons" >
@@ -27,22 +28,18 @@
                 <a href="ContactUs.html" class="button">Contact us</a>
             </div>
         </div>
-    </div>
+    </div> 
 
-    <nav class="sidebar" aria-label="Section navigation">
-        <a href="#section-1" class="active" aria-label="Go to home section"></a>
-        <a href="#section-2" aria-label="Go to recent works section"></a>
-        <a href="#section-3" aria-label="Go to footer section"></a>
-    </nav>
-    
-    <div class="banner scroll-target" id="section-1">
-        <div id="texts">
-            image lang nadi waits
+    <div class="banner">
+        <div class="banner-background">
+            <img src="../assets/background.png" alt="">
         </div>
 
-        <div id="side-bar">
-
+        <div class="banner-hero">
+            <h1>You Decide, We Design</h1>
+            <p>Here in joshworks, your visions are crafted into reality. Through various services offered to cater people with their ideas, your decision is designed with precision.</p>
         </div>
+
 
         <div class="card">
             <h1>Got a vision in mind? Let's work it out!</h1>
@@ -53,34 +50,38 @@
     </div>
 
     <div class="more-container">
-        <div class="recent-works scroll-target" id="section-2">
+        <div class="recent-works">
             <div class="recent-header">
                 <h1>Recent Works</h1>
-                <a href="">See more</a>
+                <a href="Gallery.html">See more</a>
             </div>
             
 
             <div class="recent-cards">
                 <div class="image-card">
-                    <img src="" alt="y">
-                    <p>Hello this is isjvlvnvnsvnsvjn</p>
+                    <img src="../assets/611368842_122230137488096684_4240129167899716108_n.jpg" alt="y">
+                    <h2>Paul Kaldi</h2>
+                    <p>Logo Design</p>
                 </div>    
                 <div class="image-card">
-                    <img src="" alt="y">
-                    <p>Hello this is isjvlvnvnsvnsvjn</p>
+                    <img src="../assets/612115750_122230137362096684_6353862000992723516_n.jpg" alt="y">
+                    <h2>Chem Soc</h2>
+                    <p>Shirt Design</p>
                 </div>
                 <div class="image-card">
-                    <img src="" alt="y">
-                    <p>Hello this is isjvlvnvnsvnsvjn</p>
+                    <img src="../assets/614039059_122230137284096684_1566071119586237972_n.jpg" alt="y">
+                    <h2>Advocacy Youth Summit</h2>
+                    <p>Brand Identity</p>
                 </div>
                 <div class="image-card">
-                    <img src="" alt="y">
-                    <p>Hello this is isjvlvnvnsvnsvjn</p>
+                    <img src="../assets/612207895_122230136960096684_5229783599770503250_n.jpg" alt="y">
+                    <h2>Malevolant Shrine</h2>
+                    <p>3D Design</p>
                 </div>
             </div>
         </div>
 
-        <footer class="footer scroll-target" id="section-3">
+        <footer class="footer">
             <div class="footer-content">
                 <div class="footer-brand">
                     <h2>JoshWorks</h2>
@@ -101,39 +102,12 @@
                 </div>
             </div>
 
-            <div id="footer-bottom">
+            <div class="footer-bottom">
                 <p>© 2025 JoshWorks. All rights reserved.</p>
             </div>
         </footer>
     </div>
 
-    <script>
-        const sections = document.querySelectorAll('.scroll-target');
-        const sidebarLinks = document.querySelectorAll('.sidebar a');
-
-        const updateActiveLink = (id) => {
-            sidebarLinks.forEach(link => {
-                const isActive = link.getAttribute('href') === '#' + id;
-                link.classList.toggle('active', isActive);
-            });
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            const visible = entries
-                .filter(entry => entry.isIntersecting)
-                .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-
-            if (visible) {
-                updateActiveLink(visible.target.id);
-            }
-        }, {
-            threshold: [0.3, 0.6, 0.9],
-            rootMargin: '-10% 0px -35% 0px'
-        });
-
-        sections.forEach(section => observer.observe(section));
-    </script>
 </body>
 
 </html>
-
