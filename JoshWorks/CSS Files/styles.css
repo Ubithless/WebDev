@@ -269,7 +269,99 @@ p {
     text-align: center;
 }
 
+/*About Us Section*/
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    margin: 0;
+}
+h1 {
+    font-size: 24px;
+    color: #0c4147;
+}
+
+body {
+    font-family: Inter;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    font-size: 18px;
+}
+
+.button {
+    font-size: 20px;
+    background-color: #01515a;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    font-weight: bold;
+    width: auto;
+    text-align: center;
+}
+
+.container {
+    width: calc(100% - 500px);
+    height: auto;
+
+    justify-self: center;
+    padding: 100px 0 100px 0;
+}
+
+.container h1 {
+    font-size: 80px;
+    color: white  ;
+}
+
+.container p {
+    color: white;
+}
+
+#header-1 {
+    justify-self: left;
+}
+
+#header-2 {
+    justify-self: right;
+}
+
+#header-3 {
+    justify-self: left;
+}
+
+
+.text-body {
+    padding: 100px 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    border: white solid 1px;
+        background-color: #01515a;
+    border-radius: 40px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-body img {
+    width: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+}
+
 /*ContactUs Section*/
+
 .contact-container {
     margin: 50px auto 0;
     width: 100%;
