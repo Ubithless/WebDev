@@ -305,8 +305,11 @@ p {
     border-radius: 30px;
     color: white;
     font-weight: bold;
-    width: auto;
+    width: fit-content;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
@@ -414,6 +417,13 @@ p {
 
 .buttons input {
     cursor: pointer;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    content: center;
+    gap: 10px;
 }
 
 /*Gallery*/
