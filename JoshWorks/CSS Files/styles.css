@@ -518,6 +518,7 @@ p {
     padding: 0 0 30px 0;
     border: #01515a solid 2px;
     border-radius: 50px;
+    background: linear-gradient(to bottom, white, #c7f8ff);
 }
 
 .gallery-containers h1 {
@@ -532,11 +533,13 @@ p {
     align-items: center;
     flex-wrap: wrap;
     gap: 20px;
+
 }
 
 .gallery-containers .img-container img {
     height: 300px;
     width: auto;
+    border-radius: 20px;
 }
 
 /* Services css */
