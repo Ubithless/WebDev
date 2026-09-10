@@ -491,6 +491,26 @@ p {
     line-height: 1;
 }
 
+.service-description {
+    margin: 0;
+    color: black;
+    font-size: 18px;
+    line-height: 1.6;
+    background: skyblue;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+#service-heading {
+    line-height: 1.1;
+    color: #0c4147;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: fit-content;
+}
+
 .service-samples {
     display: flex;
     flex-direction: column;
@@ -539,4 +559,13 @@ p {
     color: #49676b;
     font-size: 14px;
     line-height: 1.6;
+}
+#service-footer {
+    line-height: 1.1;
+    color: #0c4147;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+    width: fit-content;
 }
