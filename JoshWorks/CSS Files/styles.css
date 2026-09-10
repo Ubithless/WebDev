@@ -365,17 +365,19 @@ p {
 /*ContactUs Section*/
 .Main-container {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     margin-top: 125px;
     margin-right: 25px;
     margin-left: 25px;
     padding: 25px;
+    width: 1000px;
+    justify-self: center;
 }
 .ContactDetails {
     display: flex;
     flex-direction: column;
-    width: calc(50% - 50px);
+    width: 100%;
     padding: 25px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -383,7 +385,7 @@ p {
 .contact-form {
     display: flex;
     flex-direction: column;
-    width: calc(50% - 50px);
+    width: 100%;
     padding: 25px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -405,6 +407,28 @@ p {
 .contact-form textarea {
     padding: 8px;
     margin-bottom: 10px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.radio-option input {
+    padding: 0;
+    margin: 0;
+}
+
+.checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox-option input {
+    padding: 0;
+    margin: 0;
 }
 
 .buttons {
