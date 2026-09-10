@@ -497,7 +497,7 @@ p {
 
 .services-text h1 {
     margin: 0 0 20px;
-    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-size: 100px;
     line-height: 1;
 }
 
@@ -513,12 +513,11 @@ p {
 }
 #service-heading {
     line-height: 1.1;
-    color: #0c4147;
-    background-color: lightblue;
-    padding: 10px;
-    border-radius: 10px;
-    margin-left: 20px;
-    width: fit-content;
+    color: white;
+    background-color: #01515a;
+    padding: 10px 20px;
+    border-radius: 10px;    
+    font-size: 32px;
 }
 
 .service-samples {
@@ -578,4 +577,25 @@ p {
     border-radius: 10px;
     margin-left: 20px;
     width: fit-content;
+}
+
+.more-services {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.service-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.service-table table th {
+    background-color: #01515a;
+    color: white;
+}
+.service-table table,
+.service-table table th,
+.service-table table td {
+    border: #01515a solid 2px;
 }
